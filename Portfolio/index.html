@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- -----Header----- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Tanvi</span><br>Lokhande From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----About----- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/myphoto.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a Final-year B.Tech CSE student with strong foundations in frontend web development and
+                        software engineering. Experienced in building responsive and user-friendly web applications
+                        using HTML, CSS, JavaScript, React.js, Bootstrap, and Tailwind CSS. Quick learner with a passion
+                        for problem-solving and collaboration, eager to contribute innovative solutions in a real-world
+                        environment.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>HTML, CSS, and JavaScript</li>
+                            <li><span>Frameworks</span><br>Bootstrap, Tailwind CSS, and React.js</li>
+                            <li><span>Tools</span><br>Git, Git Hub, VS Code, and Terminal</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Current</span><br>Web Developer Intern</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor In Technology (CSE)</span><br>8 CGPA</li>
+                            <li><span>XII (HSC)</span><br>71%</li>
+                            <li><span>X (SSC)</span><br>85%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----Services----- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Frontend Dev</h2>
+                    <p>I build modern, interactive, and scalable websites using HTML, CSS, JavaScript, and Frameworks.
+                        From simple landing pages to dynamic web applications, I create clean, maintainable code
+                        tailored to your project's needs.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Implementation</h2>
+                    <p>I transform design mockups into functional, user-friendly interfaces with attention to detail. My
+                        goal is to deliver engaging digital experiences that are visually appealing, intuitive, and
+                        aligned with the brand identity.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Responsive Design</h2>
+                    <p>I design and develop fully responsive websites that adapt seamlessly to desktops, tablets, and
+                        mobile devices. My focus is on ensuring accessibility, fast loading speeds, and a consistent
+                        user experience across all screen sizes.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----Portfolio----- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/work-1.png">
+                    <div class="layer">
+                        <h3>Google Gemini 2.0 Clone</h3>
+                        <p>Built a Google Gemini Clone using React.js with real-time AI-powered responses.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/work-2.png">
+                    <div class="layer">
+                        <h3>Real Estate Website</h3>
+                        <p>Designed a modern, responsive property listing website with engaging UI/UX.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/work-3.png">
+                    <div class="layer">
+                        <h3>University Website</h3>
+                        <p>Designed and coded a responsive educational website for universities with clean layouts.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- -----Contact----- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>tanvilokhande26@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 8591798850</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="assets/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Tanvi. Made with <i class="fas fa-heart"></i> by Me</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
